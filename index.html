@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Апелляция результатов экзамена</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Апелляция результатов экзамена</h1>
+                <p class="subtitle">Процедура подачи апелляции в случае
+                    несогласия с результатами</p>
+            </header>
+
+            <div class="main-content">
+                <section class="section">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="info-label">сроки подачи:</span>
+                            <span class="info-value">не позднее 6 недель с даты
+                                письменного экзамена.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">сроки рассмотрения:</span>
+                            <span class="info-value">от 2 дней до 3 недель с
+                                даты получения запроса.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">стоимость:</span>
+                            <span class="info-value">9500 рублей* +100 рублей
+                                комиссия за онлайн перевод.</span>
+                        </div>
+                        <div class="asterisk-note">* итоговая стоимость может
+                            отличаться</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-title">СКАЧАЙТЕ И ЗАПОЛНИТЕ</div>
+                    <p style="margin-bottom: 20px; color: #555;">два файла с
+                        заявлением на апелляцию</p>
+
+                    <div class="download-section">
+                        <div class="download-item" id="download-1">
+                            <div class="pdf-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="download-text">
+                                <h3>Заявление на апелляцию (форма 1)</h3>
+                                <p>Формат: PDF, размер: 245 КБ</p>
+                                <button class="download-btn">
+                                    <i class="fas fa-download"></i> Скачать
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="download-item" id="download-2">
+                            <div class="pdf-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="download-text">
+                                <h3>Заявление на апелляцию (форма 2)</h3>
+                                <p>Формат: PDF, размер: 280 КБ</p>
+                                <button class="download-btn">
+                                    <i class="fas fa-download"></i> Скачать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-title">ОТСКАНИРУЙТЕ И ЗАГРУЗИТЕ</div>
+                    <p style="margin-bottom: 20px; color: #555;">заполненные
+                        заявления</p>
+
+                    <div class="upload-section">
+                        <div class="upload-item uploaded" id="upload-item-1">
+                            <div class="upload-number">
+                                1
+                                <div class="checkmark">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="upload-icon">
+                                <i class="fas fa-file-pdf"
+                                    id="upload-icon-1"></i>
+                            </div>
+                            <div class="file-info">
+                                <div class="file-name"
+                                    id="file-name-1">Заявление_1.pdf</div>
+                            </div>
+                            <input type="file" class="file-input"
+                                id="file-input-1" accept=".pdf">
+                        </div>
+
+                        <div class="upload-item" id="upload-item-2">
+                            <div class="upload-number">
+                                2
+                                <div class="checkmark">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="upload-icon">
+                                <i class="fas fa-plus" id="upload-icon-2"></i>
+                            </div>
+                            <div class="file-info">
+                                <div class="file-name" id="file-name-2">Файл не
+                                    выбран</div>
+                            </div>
+                            <input type="file" class="file-input"
+                                id="file-input-2" accept=".pdf">
+                        </div>
+                    </div>
+
+                    <div class="upload-status">
+                        <div class="status-item">
+                            <div class="status-dot uploaded"></div>
+                            <span>Загружено</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-dot"></div>
+                            <span>Не загружено</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-title">ОПЛАТИТЕ</div>
+                    <p style="margin-bottom: 10px; color: #555;">подачу
+                        апелляции</p>
+
+                    <div class="payment-section">
+                        <div class="payment-title">Стоимость апелляции - 7700
+                            ₽</div>
+                        <button class="payment-btn" id="payment-btn" disabled>
+                            ОПЛАТА АПЕЛЛЯЦИИ
+                        </button>
+                        <p
+                            style="margin-top: 15px; color: #666; font-size: 0.9rem;">После
+                            загрузки всех документов станет доступна оплата</p>
+                    </div>
+                </section>
+
+                <div class="important-info">
+                    <h3><i class="fas fa-exclamation-circle"></i> Важная
+                        информация для корректного заполнения заявления</h3>
+                    <div class="info-item">
+                        <span class="info-label">Centre name:</span>
+                        <span class="info-value">BKC-H Moscow IELTS Test
+                            Centre</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Centre number:</span>
+                        <span class="info-value">RU087</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Candidate number:</span>
+                        <span class="info-value">Цифры в верхнем правом углу
+                            сертификата/можно не заполнять, если сертификат еще
+                            не получен</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>© 2023 Центр апелляции экзаменационных результатов. Все права
+                    защищены.</p>
+            </footer>
+        </div>
+    </body>
+</html>
